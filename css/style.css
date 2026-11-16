@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+body {
+  margin: auto;
+font-family: "Anek Latin", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: #1a1a1a;
+  width: 100%;
+  z-index: 1000;
+ font-family: "Hammersmith One", sans-serif;
+}
+.loader {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+}
+
+.loader img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+.loader.heaedn{
+  animation: loadfead 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loadfead {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+}
+main {
+  background-color: #0F0F0F;
+  min-height:100rem;
+}
+
+#moveImg{
+  width:100px;
+  height: 100px;
+}
+.boxImg-main{
+  padding-bottom: 5rem;
+}
+.fide_out-buttom{
+  position: absolute;
+  bottom:5rem;
+}
+.fide-out-textBtm{
+  position:absolute;
+  bottom: 0;
+  top: 546px;
+
+}
+
+.menu-box {
+  
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height:0;
+    margin-top:20px;
+    overflow: hidden;
+    opacity:1;
+    position: absolute;
+    top: 50px;
+    transition: min-height 0.4s ease, opacity 0.3s ease;
+   
+}
+
+/* وقتی منو باز می‌شود */
+.menu-box.active {
+    width: 180px;
+    opacity: 1;
+}
+ .btnStartWN{
+  text-align: center;
+  border: none;
+  color: white;
+  display: flex;
+  padding:10px;
+  align-items: center;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: #E50000;
+ }
+ .btnStartWN:hover{
+  background-color: #f04040;
+ }
+
+.movie-box {
+    flex: 0 0 280px;
+    height: 280px;
+
+    background-color: #252525;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    
+}
+
+.sectionTow{
+  margin-top:11rem;
+}
+.boxcontentimg{
+  width:100%; height: 250px;
+  background-color: #E50000;
+  
+  
+  
+}
+.chil-1 , .chil-2{
+  background-color:#262626;
+  height:50%;
+
+}
+
+.parentposter{
+  border-radius:10px;
+}
+.parentposter img{
+  object-fit: cover;
+  border-radius:10px;
+}
+
+
+
+/* عرض اسکرول‌بار */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* پس‌زمینه اسکرول‌بار */
+::-webkit-scrollbar-track {
+    background: #0B0B0F;
+    border-radius: 10px;
+}
+
+/* قسمت متحرک اسکرول‌بار */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        #ff1a1a,
+        #990000
+    );
+    border-radius: 10px;
+    border: 2px solid #0B0B0F;
+    transition: all 0.3s ease;
+}
+
+/* هاور روی اسکرول‌بار */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+/* پشتیبانی از Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #E50914 #0B0B0F;
+}

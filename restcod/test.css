@@ -1,0 +1,17 @@
+ main{
+    background-color: #1B1F28;
+    height: 100vh;
+ }
+ .bgcss-hs{
+    background-color: #2B3340;
+ }
+ .bgcss-hS2{
+    background-color: #4b5f6a;
+ }
+
+ input{
+    border: none;
+ }
+ input::placeholder{
+color: aliceblue;
+ }

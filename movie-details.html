@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+  rel="stylesheet"
+  href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+/>
+    <title>جزئیات فیلم</title>
+    <link rel="stylesheet" href="/css/datalis.css">
+    
+</head>
+<body>
+
+   
+    <!-- Navbar -->
+    <header class="navbar">
+         <div class="logo">
+            <a href="index.html" class="text-white text-decoration-none">Streom<span>Vibe</span></a>
+        </div>
+
+        <nav>
+                                      <button type="button" class="btn btn-danger"><a class="text-white text-decoration-none" href="/index.html">back to home</a></button>
+
+        </nav>
+
+       
+    </header>
+
+
+    <!-- Movie Details -->
+    <main>
+    <img id="backdrop" alt="Movie Background">
+        <section class="movie-details">
+
+            <!-- Movie Poster -->
+            <div class="movie-poster">
+                <img id="poster" src="" alt="Movie Poster">
+            </div>
+
+
+            <!-- Movie Information -->
+            <div class="movie-content">
+
+                <span class="movie-label">MOVIE DETAILS</span>
+
+                <h1 id="title">Movie Title</h1>
+
+                <p id="tagline" class="tagline"></p>
+
+                <div class="movie-rating">
+                    <span>⭐ Rating:</span>
+                    <strong id="rating"></strong>
+                    <span>/ 10</span>
+                </div>
+
+                <p id="overview"></p>
+
+
+                <!-- Movie Metadata -->
+                <div class="movie-meta">
+
+                    <div class="meta-item">
+                        <span>📅 Release Date</span>
+                        <strong id="release-date"></strong>
+                    </div>
+
+                    <div class="meta-item">
+                        <span>⏱ Runtime</span>
+                        <strong id="runtime"></strong>
+                    </div>
+
+                    <div class="meta-item">
+                        <span>🎭 Genres</span>
+                        <strong id="genres"></strong>
+                    </div>
+
+                    <div class="meta-item">
+                        <span>🌍 Language</span>
+                        <strong id="language"></strong>
+                    </div>
+
+                    <div class="meta-item">
+                        <span>🎬 Status</span>
+                        <strong id="status"></strong>
+                    </div>
+
+                    <div class="meta-item">
+                        <span>💰 Budget</span>
+                        <strong id="budget"></strong>
+                    </div>
+
+                    <div class="meta-item">
+                        <span>💵 Revenue</span>
+                        <strong id="revenue"></strong>
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="movie-buttons">
+
+                    <button id="trailer-btn">
+                        ▶ Watch Trailer
+                    </button>
+
+                    <button id="favorite-btn">
+                        ❤️ Add to Favorites
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Production Companies -->
+       <section class="production-section container-fluid p-4">
+
+  <h2 class="text-white mb-4">
+    🎞️ Production Companies
+  </h2>
+
+  <div id="production-companies" class="row g-4">
+
+    <!-- کارت اول -->
+    <div class="col-12 col-md-6">
+      <div class="company-card h-100 p-4 rounded-4 text-center">
+
+        <img id="imglog" class="company-logo mb-4" alt="">
+
+        <h3 id="namecompany" class="text-white fw-bold"></h3>
+
+        <hr class="border-secondary">
+
+        <p id="contry" class="text-secondary mb-0">
+          
+        </p>
+
+      </div>
+    </div>
+
+    <!-- کارت دوم -->
+  <div class="col-12 col-md-6">
+      <div class="company-card h-100 p-4 rounded-4 text-center">
+
+        <img id="imglog2" class="company-logo mb-4" alt="">
+
+        <h3 id="namecompany2" class="text-white fw-bold"></h3>
+
+        <hr class="border-secondary">
+
+        <p id="contry2" class="text-secondary mb-0">
+          
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MOVIEZONE. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+<script src="./js/details.js"></script>
+</body>
+</html>

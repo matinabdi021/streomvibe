@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>دموی بانکی آبی | پروژه تمرینی</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo-tag">نسخه تمرینی و غیررسمی — بدون اتصال بانکی</div>
+<div class="phone">
+<header><div class="top"><span class="brand">بلو<span>‌</span>بانک</span><button id="bell" class="icon">♧</button></div></header>
+<main>
+<section id="home" class="page active">
+<div class="hello"><div><small>شنبه، ۲۴ آبان</small><h2>سلام، خوش اومدی 👋</h2></div><div class="avatar">م</div></div>
+<div class="balance-card"><div class="row"><span>موجودی حساب آزمایشی</span><button id="toggleBalance" class="ghost">◉</button></div><div class="balance" id="balance">۱۲۵,۸۰۰,۰۰۰ <small>ریال</small></div><div class="card-bottom"><span>شماره حساب نمونه</span><b>••••  ••••  ••۴۲</b></div></div>
+<div class="quick"><button data-go="transfer"><i>↗</i>انتقال وجه</button><button data-go="services"><i>▦</i>خدمات روزانه</button><button id="addMoney"><i>＋</i>افزایش موجودی</button></div>
+<div class="section-head"><h3>تراکنش‌های اخیر</h3><a href="#" id="allTransactions">مشاهده همه</a></div>
+<div id="transactions" class="transactions"></div>
+</section>
+<section id="transfer" class="page">
+<h2>انتقال وجه</h2><p class="muted">انتقال آزمایشی؛ هیچ پولی جابه‌جا نمی‌شود.</p>
+<div class="panel"><label>شماره کارت مقصد</label><input id="dest" inputmode="numeric" maxlength="19" placeholder="۶۰۳۷ •••• •••• ••••"><label>نام دریافت‌کننده</label><input id="receiver" placeholder="مثلاً علی رضایی"><label>مبلغ (ریال)</label><input id="amount" inputmode="numeric" placeholder="مبلغ را وارد کنید"><button id="continue" class="primary">ادامه</button><p id="transferMsg" class="msg"></p></div>
+</section>
+<section id="services" class="page"><h2>خدمات روزانه</h2><div class="service-grid"><button>📱<span>خرید شارژ</span></button><button>🌐<span>بسته اینترنت</span></button><button>🧾<span>پرداخت قبض</span></button><button>▦<span>اسکن QR نمایشی</span></button></div><p class="muted">این گزینه‌ها صرفاً نمایشی هستند.</p></section>
+<section id="card" class="page"><h2>کارت من</h2><div class="bank-card"><div class="chip"></div><div class="card-name">BLUE DEMO</div><div class="card-number">۶۲۱۹ •••• •••• ۴۲۸۱</div><div class="card-foot"><span>مشتری نمونه</span><b>DEMO</b></div></div><div class="panel"><div class="setting">وضعیت کارت <b class="green">فعال (نمایشی)</b></div><div class="setting">شماره کارت نمونه <b>•••• ۴۲۸۱</b></div><button class="secondary" id="copyCard">کپی شماره نمونه</button></div></section>
+<section id="profile" class="page"><h2>پروفایل</h2><div class="profile-head"><div class="avatar big">م</div><div><b>مشتری نمونه</b><p class="muted">حساب آزمایشی</p></div></div><div class="panel"><div class="setting">اطلاعات حساب <span>›</span></div><div class="setting">تنظیمات و امنیت <span>›</span></div><div class="setting">پشتیبانی <span>›</span></div><div class="setting">درباره پروژه <span>›</span></div></div></section>
+</main>
+<nav class="bottom"><button class="selected" data-tab="home"><b>⌂</b>خانه</button><button data-tab="transfer"><b>⇄</b>انتقال</button><button data-tab="services"><b>▦</b>خدمات</button><button data-tab="card"><b>▭</b>کارت</button><button data-tab="profile"><b>♙</b>پروفایل</button></nav>
+</div>
+<script src="script.js"></script>
+</body></html>

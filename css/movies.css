@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+#bodymovis {
+  background: url(/assets/img/marvels-spider-man-3840x2160-11990.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color:#F8FAFC;
+}
+header{
+  padding:1rem;
+}
+
+.boxserchitems{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size:30px;
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: rgba(40, 39, 39, 0.644);
+   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 212, 212, 0.2);
+  border-radius: 10px;
+  visibility: hidden;
+}
+.d-blockcss{
+  visibility: inherit;
+}
+
+.visbil{
+  visibility: hidden;
+}
+/* مین  */
+
+.glass-bg {
+  background: rgba(40, 39, 39, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(222, 212, 212, 0.2);
+}
+
+.imgbackground .imgvaled {
+  width:100%;
+  border-radius: 10px;
+}
+.titlemovie{
+  margin-top: 5px;
+  border-bottom: 1px solid #F8FAFC;
+}
+#selectganer{
+  border: none;
+  background-color: #f8fafc00;
+  color: #F8FAFC;
+  border: 1px dotted;
+  border-radius:8px;
+  text-align: center;
+  padding:8px;
+}
+#selectganer option{
+  background-color: rgba(180, 186, 184, 0.894) !important;
+  color: black;
+  border-radius: 8px;
+  padding: 10px !important;
+
+}
+
+#selectganer option:checked {
+    background-color: #7b7a7e !important;
+    color: white;
+}
+
+/* قسمت سرچ فیلم  */
+.ulStyleSet{
+  list-style: none;
+  padding: 0;
+  margin:5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column; 
+  
+  
+}
+.listyleSet{
+  font-size: 10px;
+  list-style: none;
+  padding:5px;
+  margin-top:10px;
+  border-top: 1px solid #F8FAFC;
+}
+.imgbox{
+  width: 80px;
+  height:100px;
+  
+}
+#profile{
+  border: 1px solid red;
+  background-color: #F8FAFC;
+  width: 100px;
+  height: 100px;
+}

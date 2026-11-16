@@ -1,0 +1,189 @@
+.boxBtn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height:3rem;
+    padding: 5px;
+    border-radius: 10px;
+    gap:15px;
+}
+/* رنگ ها */
+
+/* Text Colors */
+
+.text-white { color: #FFFFFF; }
+.text-black { color: #000000; }
+.text-red { color: #FF0000; }
+.text-primary { color: #E50914; }
+.text-gray { color: #808080; }
+.text-light-gray { color: #AAAAAA; }
+.text-dark-gray { color: #333333; }
+.text-blue { color: #0000FF; }
+.text-light-blue { color: #00BFFF; }
+.text-green { color: #00FF00; }
+.text-yellow { color: #FFFF00; }
+.text-orange { color: #FFA500; }
+.text-purple { color: #800080; }
+.text-pink { color: #FFC0CB; }
+.text-gold { color: #FFD700; }
+
+
+/* دکمه های منو */
+/* استایل لینک آیکون‌ها */
+.icon-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    transition: all 0.35s ease;
+    position: relative;
+}
+
+/* استایل خود آیکون */
+a img {
+    width: 24px;
+    height: 24px;
+    transition: all 0.35s ease;
+}
+
+/* افکت هاور */
+a:hover {
+    background: rgba(229, 9, 20, 0.15);
+    box-shadow: 
+        0 0 10px rgba(229, 9, 20, 0.5),
+        0 0 25px rgba(229, 9, 20, 0.3);
+    transform: translateY(-5px);
+}
+
+/* بزرگ شدن و درخشش آیکون */
+a:hover img {
+    transform: scale(1.2);
+    filter: 
+        brightness(1.5)
+        drop-shadow(0 0 5px #E50914)
+        drop-shadow(0 0 10px #E50914);
+}
+
+/* افکت کلیک */
+a:active {
+    transform: scale(0.9);
+}
+
+.btnNext{
+    width:150px;
+    height:45px;
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    border: none;
+    border-radius:1cap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+position: relative;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.button::after {
+content: "";
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 0;
+height: 2px;
+background-color: #e50000;
+transition: width 0.3s ease;
+}
+
+.button:hover {
+color: #e50000 !important;
+}
+
+.button:hover::after {
+width: 100%;
+}
+
+
+
+#contInputSearch{
+   height:0;  
+    overflow: hidden;
+
+    transition: height 0.5s ease;
+
+}
+#profile{
+  border: 1px solid red;
+  background-color: #F8FAFC;
+  width:50px;
+  height:50px;
+}
+
+.iconedit{
+    position: absolute;
+    bottom: 0;
+    right:1px;
+    width:20px;
+    
+}
+
+.btnIconMenu{
+    display: flex;
+    align-items: center;
+}
+.width{
+  height:80px !important ;
+  
+}
+
+
+
+.search-input {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+
+    color: white;
+    font-size: 16px;
+
+    border: 1px solid #ff3030;
+    border-radius: 14px;
+    outline: none;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url('../assets/img/Container\ \(2\).png');
+
+    background-size: cover;
+    background-position: center;
+
+    animation: movieZoom 8s ease-in-out infinite alternate;
+
+    transition: box-shadow .3s ease;
+}
+
+.search-input::placeholder {
+    color: white;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 20px rgba(255, 0, 0, .7);
+}
+
+@keyframes movieZoom {
+    from {
+        background-size: 100% 100%;
+    }
+
+    to {
+        background-size: 150% 150%;
+    }
+}
+

@@ -1,0 +1,160 @@
+ body {
+            background-image: url(/assets/img/avengers-doomsday-7680x4320-17768.jpg);
+            background-size:cover;
+            background-position:center;
+            backdrop-filter: initial;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+           
+           background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+        }
+
+        .navbar a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            color: white;
+        }
+
+        .support-header {
+            text-align: center;
+            padding: 80px 20px 50px;
+        }
+
+        .support-header h1 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+
+        .support-header p {
+            color: #aaa;
+            font-size: 17px;
+        }
+
+        .support-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .accordion-item {
+         background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+            border: 1px solid #333;
+            margin-bottom: 12px;
+            border-radius: 8px !important;
+            overflow: hidden;
+            
+
+        }
+
+        .accordion-button {
+       
+            color: white;
+            font-weight: bold;
+              background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+        }
+
+        .accordion-button:not(.collapsed) {
+      
+            color: #e50914;
+            box-shadow: none;
+              background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+        }
+
+        .accordion-button::after {
+            filter: invert(1);
+        }
+
+        .accordion-body {
+        
+            color: #bbb;
+              background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+        }
+
+        .contact-box {
+           
+            padding: 30px;
+            border-radius: 12px;
+              background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+        }
+
+        .form-control {
+          
+            border: 1px solid #444;
+            color: white;
+            padding: 12px;
+              background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+        }
+
+        .form-control:focus {
+            background-color: #292929;
+            color: white;
+            border-color: #e50914;
+            box-shadow: none;
+              background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+        }
+
+        .form-control::placeholder {
+            color: #999;
+        }
+
+        .btn-support {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+        }
+
+        .btn-support:hover {
+            background-color: #b80710;
+            color: white;
+        }
+
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+            padding: 25px;
+            border-radius: 12px;
+            height: 100%;
+        }
+
+        .contact-info p {
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+
+        footer {
+   
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            margin-top: 70px;
+              background-color: rgba(255, 255, 255, 0.045);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+        }
