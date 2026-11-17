@@ -32,7 +32,7 @@ async function getmovies() {
         card.style.visibility = "visible";
       });
     }
-/* btn cgange geners */
+    /* btn cgange geners */
     selectisUser.addEventListener("change", (e) => {
       let userPerceivedGener = Number(e.target.value);
       let filteredMovies;

@@ -35,14 +35,6 @@ tagparent.addEventListener("click", (e) => {
     const inputjs = document.createElement("input");
     const video=document.createElement('video');
     const source=document.createElement('source');
-    /* video.setAttribute('autoplay');
-    video.setAttribute('muted');
-    video.setAttribute('loop');
-    video.setAttribute('playsinline');
-    source.setAttribute('src','./assets/videos/movie.mp4')
-    source.setAttribute('type','text'); */
-  
-    
     inputjs.setAttribute("placeholder", "Search movies ");
     inputjs.setAttribute("type", "text");
     

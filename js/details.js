@@ -49,7 +49,8 @@ async function getdaalis() {
         
        
     }
-    catch{
+    catch(error){
+           console.log("حطا در دریافت اطلاعات", error.message);
         
     }
     
