@@ -1,240 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>جزئیات فیلم | StreamVibe</title>
+    <title>Movies | StreamVibe</title>
 
     <!-- Bootstrap CSS -->
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    >
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/datalis.css">
+    <link rel="stylesheet" href="./css/movies.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-</head>
+  <body id="bodymovis">
+    <!-- Loader -->
+  <!--   <div class="loader z-1">
+      <img
+        class="bg-transparent"
+        src="./assets/icon/Animated AB_DI Logo Variations.gif"
+        alt=""
+      />
+    </div> -->
 
-<body>
-    <!-- Navbar -->
-    <header class="navbar">
+    <!-- Header -->
+    <header class="container-lg d-flex justify-content-between glass-bg">
+      <!-- Logo -->
+      <div class="logo d-flex align-items-center">
+        <img width="25" src="./assets/icon/favicon.png.png" alt="" />
 
-        <div class="logo">
-            <a href="./index.html" class="text-white text-decoration-none">
-                Streom<span>Vibe</span>
-            </a>
-        </div>
+        <h4 class="text-light mb-1">StreamVibe</h4>
+      </div>
 
-        <nav>
-            <button type="button" class="btn btn-danger">
-                <a
-                    class="text-white text-decoration-none"
-                    href="./index.html"
-                >
-                    Back to Home
-                </a>
-            </button>
-        </nav>
+      <!-- Search -->
+      <div
+        class="border d-flex justify-content-center w-50 position-relative rounded-2"
+      >
+        <button class="btnserch position-absolute btn btn-danger end-0">
+          <img
+            src="./assets/icon/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            alt=""
+          />
+        </button>
 
+        <input
+          id="inputSerchUser"
+          class="bg-transparent border-0 w-100 rounded-2 ps-3"
+          type="text"
+          placeholder="Search for movies"
+        />
+      </div>
+
+      <!-- Genre Filter -->
+      <nav>
+        <select name="genre" id="selectganer">
+          <option class="ganerID" value="11111">ALL GENRES</option>
+
+          <option data-id="1" class="ganerID" value="28">Action</option>
+
+          <option data-id="2" class="ganerID" value="878">
+            Science Fiction
+          </option>
+
+          <option data-id="3" class="ganerID" value="18">Drama</option>
+
+          <option data-id="4" class="ganerID" value="12">Adventure</option>
+
+          <option data-id="5" class="ganerID" value="35">Comedy</option>
+
+          <option data-id="6" class="ganerID" value="27">Horror</option>
+
+          <option data-id="7" class="ganerID" value="16">Animation</option>
+        </select>
+      </nav>
     </header>
 
+    <!-- Main -->
+    <main id="mainforParent">
+      <!-- Search Results -->
+      <div
+        class="boxserchitems position-absolute border w-75 z-1 h-25 d-flex justify-content-center align-content-center flex-column overflow-y-auto p-5 pb-5 mt-5"
+      ></div>
 
-    <!-- Movie Details -->
-    <main>
+      <!-- Movies Section -->
+      <section class="container-lg d-flex justify-content-center flex-column">
+        <div
+          class="actinjs row d-flex justify-content-center align-items-center gap-4"
+        >
+          <!-- Movie Card 1 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-        <!-- Movie Background -->
-        <img id="backdrop" alt="Movie Background">
+          <!-- Movie Card 2 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-        <section class="movie-details">
+          <!-- Movie Card 3 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-            <!-- Movie Poster -->
-            <div class="movie-poster">
+          <!-- Movie Card 4 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                <img
-                    id="poster"
-                    src=""
-                    alt="Movie Poster"
-                >
+          <!-- Movie Card 5 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-            </div>
+          <!-- Movie Card 6 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
+          <!-- Movie Card 7 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-            <!-- Movie Information -->
-            <div class="movie-content">
+          <!-- Movie Card 8 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                <span class="movie-label">
-                    MOVIE DETAILS
-                </span>
+          <!-- Movie Card 9 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                <h1 id="title">
-                    Movie Title
-                </h1>
+          <!-- Movie Card 10 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                <p id="tagline" class="tagline"></p>
+          <!-- Movie Card 11 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
+          <!-- Movie Card 12 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                <!-- Rating -->
-                <div class="movie-rating">
+          <!-- Movie Card 13 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                    <span>⭐ Rating:</span>
+          <!-- Movie Card 14 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                    <strong id="rating"></strong>
+          <!-- Movie Card 15 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                    <span>/ 10</span>
+          <!-- Movie Card 16 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                </div>
+          <!-- Movie Card 17 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
+          <!-- Movie Card 18 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-                <!-- Overview -->
-                <p id="overview"></p>
+          <!-- Movie Card 19 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
 
-
-                <!-- Movie Metadata -->
-                <div class="movie-meta">
-
-                    <div class="meta-item">
-                        <span>📅 Release Date</span>
-                        <strong id="release-date"></strong>
-                    </div>
-
-                    <div class="meta-item">
-                        <span>⏱ Runtime</span>
-                        <strong id="runtime"></strong>
-                    </div>
-
-                    <div class="meta-item">
-                        <span>🎭 Genres</span>
-                        <strong id="genres"></strong>
-                    </div>
-
-                    <div class="meta-item">
-                        <span>🌍 Language</span>
-                        <strong id="language"></strong>
-                    </div>
-
-                    <div class="meta-item">
-                        <span>🎬 Status</span>
-                        <strong id="status"></strong>
-                    </div>
-
-                    <div class="meta-item">
-                        <span>💰 Budget</span>
-                        <strong id="budget"></strong>
-                    </div>
-
-                    <div class="meta-item">
-                        <span>💵 Revenue</span>
-                        <strong id="revenue"></strong>
-                    </div>
-
-                </div>
-
-
-                <!-- Buttons -->
-                <div class="movie-buttons">
-
-                    <button id="trailer-btn">
-                        ▶ Watch Trailer
-                    </button>
-
-                    <button id="favorite-btn">
-                        ❤️ Add to Favorites
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Production Companies -->
-        <section class="production-section container-fluid p-4">
-
-            <h2 class="text-white mb-4">
-                🎞️ Production Companies
-            </h2>
-
-            <div id="production-companies" class="row g-4">
-
-                <!-- Company Card 1 -->
-                <div class="col-12 col-md-6">
-
-                    <div class="company-card h-100 p-4 rounded-4 text-center">
-
-                        <img
-                            id="imglog"
-                            class="company-logo mb-4"
-                            alt=""
-                        >
-
-                        <h3
-                            id="namecompany"
-                            class="text-white fw-bold"
-                        ></h3>
-
-                        <hr class="border-secondary">
-
-                        <p
-                            id="contry"
-                            class="text-secondary mb-0"
-                        ></p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Company Card 2 -->
-                <div class="col-12 col-md-6">
-
-                    <div class="company-card h-100 p-4 rounded-4 text-center">
-
-                        <img
-                            id="imglog2"
-                            class="company-logo mb-4"
-                            alt=""
-                        >
-
-                        <h3
-                            id="namecompany2"
-                            class="text-white fw-bold"
-                        ></h3>
-
-                        <hr class="border-secondary">
-
-                        <p
-                            id="contry2"
-                            class="text-secondary mb-0"
-                        ></p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
+          <!-- Movie Card 20 -->
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 glass-bg visbil d-flex flex-column rounded-2 p-3"
+          >
+            <div
+              class="imgbackground d-flex justify-content-center align-items-center"
+            ></div>
+            <p
+              class="titlemovie d-flex justify-content-center align-items-center"
+            ></p>
+            <button class="btn btn-secondary">View Details</button>
+          </div>
+        </div>
+      </section>
     </main>
 
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            © 2026 MOVIEZONE. All Rights Reserved.
-        </p>
-
-    </footer>
-
-
     <!-- JavaScript -->
-    <script src="./js/details.js"></script>
+    <script src="./js/movis.js"></script>
+    <script src="./js/main.js"></script>
 
-</body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
