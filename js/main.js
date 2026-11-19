@@ -69,12 +69,7 @@ continerSerch.classList.toggle('d-blockcss');
   continerSerch.classList.toggle('d-blockcss')
 }
 })
-}
-  catch{
 
-  }
-  
-} 
 getserchbox();
 
 function handelformLogin(){
@@ -82,7 +77,6 @@ const inptuserlogin=document.querySelector('.inputEmaile');
 if(!inptuserlogin){
   return;
 }
-
   const inptusererroe=document.getElementById('masseageerroremail');
   inptuserlogin.addEventListener('blur',(e)=>{
   if(inptuserlogin.value.length < 8){
@@ -119,3 +113,11 @@ inputpassErorr.textContent='password is less than characters...!';
 }
 
 handelformLogin();
+}
+  catch(Error){
+    console.log(`خطا در دریافت اطلاعات${Error}`);
+    
+
+  }
+  
+} 
