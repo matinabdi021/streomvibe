@@ -1,60 +1,96 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link
-  rel="stylesheet"
-  href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-/>
-    <title>جزئیات فیلم</title>
-    <link rel="stylesheet" href="/css/datalis.css">
+
+    <title>جزئیات فیلم | StreamVibe</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/datalis.css">
+
 </head>
+
 <body>
+
     <!-- Navbar -->
     <header class="navbar">
-         <div class="logo">
-            <a href="index.html" class="text-white text-decoration-none">Streom<span>Vibe</span></a>
-        </div>
-        <nav>
-                                      <button type="button" class="btn btn-danger"><a class="text-white text-decoration-none" href="/index.html">back to home</a></button>
 
-        </nav>   
+        <div class="logo">
+            <a href="./index.html" class="text-white text-decoration-none">
+                Streom<span>Vibe</span>
+            </a>
+        </div>
+
+        <nav>
+            <button type="button" class="btn btn-danger">
+                <a
+                    class="text-white text-decoration-none"
+                    href="./index.html"
+                >
+                    Back to Home
+                </a>
+            </button>
+        </nav>
+
     </header>
+
+
     <!-- Movie Details -->
     <main>
-    <img id="backdrop" alt="Movie Background">
+
+        <!-- Movie Background -->
+        <img id="backdrop" alt="Movie Background">
+
         <section class="movie-details">
 
             <!-- Movie Poster -->
             <div class="movie-poster">
-                <img id="poster" src="" alt="Movie Poster">
+
+                <img
+                    id="poster"
+                    src=""
+                    alt="Movie Poster"
+                >
+
             </div>
 
 
             <!-- Movie Information -->
             <div class="movie-content">
 
-                <span class="movie-label">MOVIE DETAILS</span>
+                <span class="movie-label">
+                    MOVIE DETAILS
+                </span>
 
-                <h1 id="title">Movie Title</h1>
+                <h1 id="title">
+                    Movie Title
+                </h1>
 
                 <p id="tagline" class="tagline"></p>
 
+
+                <!-- Rating -->
                 <div class="movie-rating">
+
                     <span>⭐ Rating:</span>
+
                     <strong id="rating"></strong>
+
                     <span>/ 10</span>
+
                 </div>
 
+
+                <!-- Overview -->
                 <p id="overview"></p>
 
 
@@ -115,59 +151,91 @@
             </div>
 
         </section>
+
+
         <!-- Production Companies -->
-       <section class="production-section container-fluid p-4">
+        <section class="production-section container-fluid p-4">
 
-  <h2 class="text-white mb-4">
-    🎞️ Production Companies
-  </h2>
+            <h2 class="text-white mb-4">
+                🎞️ Production Companies
+            </h2>
 
-  <div id="production-companies" class="row g-4">
+            <div id="production-companies" class="row g-4">
 
-    <!-- کارت اول -->
-    <div class="col-12 col-md-6">
-      <div class="company-card h-100 p-4 rounded-4 text-center">
+                <!-- Company Card 1 -->
+                <div class="col-12 col-md-6">
 
-        <img id="imglog" class="company-logo mb-4" alt="">
+                    <div class="company-card h-100 p-4 rounded-4 text-center">
 
-        <h3 id="namecompany" class="text-white fw-bold"></h3>
+                        <img
+                            id="imglog"
+                            class="company-logo mb-4"
+                            alt=""
+                        >
 
-        <hr class="border-secondary">
+                        <h3
+                            id="namecompany"
+                            class="text-white fw-bold"
+                        ></h3>
 
-        <p id="contry" class="text-secondary mb-0">
-          
-        </p>
+                        <hr class="border-secondary">
 
-      </div>
-    </div>
+                        <p
+                            id="contry"
+                            class="text-secondary mb-0"
+                        ></p>
 
-    <!-- کارت دوم -->
-  <div class="col-12 col-md-6">
-      <div class="company-card h-100 p-4 rounded-4 text-center">
+                    </div>
 
-        <img id="imglog2" class="company-logo mb-4" alt="">
+                </div>
 
-        <h3 id="namecompany2" class="text-white fw-bold"></h3>
 
-        <hr class="border-secondary">
+                <!-- Company Card 2 -->
+                <div class="col-12 col-md-6">
 
-        <p id="contry2" class="text-secondary mb-0">
-          
-        </p>
+                    <div class="company-card h-100 p-4 rounded-4 text-center">
 
-      </div>
-    </div>
+                        <img
+                            id="imglog2"
+                            class="company-logo mb-4"
+                            alt=""
+                        >
 
-  </div>
-</section>
+                        <h3
+                            id="namecompany2"
+                            class="text-white fw-bold"
+                        ></h3>
+
+                        <hr class="border-secondary">
+
+                        <p
+                            id="contry2"
+                            class="text-secondary mb-0"
+                        ></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
+
     <!-- Footer -->
     <footer>
-        <p>© 2026 MOVIEZONE. All Rights Reserved.</p>
+
+        <p>
+            © 2026 MOVIEZONE. All Rights Reserved.
+        </p>
+
     </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/details.js"></script>
 
 </body>
 </html>
-<script src="./js/details.js"></script>
-</body>
-</html>
+```
