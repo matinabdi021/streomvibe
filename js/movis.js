@@ -1,11 +1,11 @@
 const api_kay = "25a7c3ed1bd6d95cf74e12c640316b27";
 async function getmovies() {
   try {
-    /* loder */
-    window.addEventListener("load", () => {
-      const lod = this.document.querySelector(".loader");
-      lod.classList += "heaedn";
-    });
+  
+   /*  window.addEventListener("load", () => {
+      const lod =document.querySelector(".loader");
+      lod.classList.add="heaedn";
+    }); */
     //API
     const url = `https://api.themoviedb.org/3/discover/movie?api_key=${api_kay}`;
     const option = {
