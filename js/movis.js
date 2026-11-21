@@ -1,4 +1,4 @@
-const api_kay = "25a7c3ed1bd6d95cf74e12c640316b27";
+
 async function getmovies() {
   try {
   
@@ -7,6 +7,7 @@ async function getmovies() {
       lod.classList.add="heaedn";
     }); */
     //API
+    const api_kay = "25a7c3ed1bd6d95cf74e12c640316b27";
     const url = `https://api.themoviedb.org/3/discover/movie?api_key=${api_kay}`;
     const option = {
       method: "GET",
